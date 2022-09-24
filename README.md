@@ -9,5 +9,5 @@
 ## Иллюстрации:
 ![Auth](https://raw.githubusercontent.com/CatDevelop/ITS-Economy/main/Resources/IMG/Demo1.png "ITS-economy")
 ![Main](https://raw.githubusercontent.com/CatDevelop/ITS-Economy/main/Resources/IMG/Demo2.png "ITS-economy")
-![Transfer](https://raw.githubusercontent.com/CatDevelop/ITS-Economy/main/Resources/IMG/Demo3.png "ITS-economy")
+![Transfer](https://raw.githubusercontent.com/CatDevelop/ITS-Economy/main/Resources/IMG/Demo31.png "ITS-economy")
 
