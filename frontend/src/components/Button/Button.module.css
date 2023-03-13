@@ -1,0 +1,23 @@
+.button {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    border-radius: 0.25rem;
+    transition: all 250ms ease 0s;
+    height: 2.5rem;
+    min-width: 2.5rem;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #81E6D9;
+}
+
+.button:hover {
+    background-color: #4FD1C5;
+}
+
+.button:active {
+    background-color: #38B2AC;
+}
