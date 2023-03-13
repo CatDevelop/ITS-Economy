@@ -1,7 +1,8 @@
 import s from "./NavBar.module.css";
 import {Link} from "react-router-dom";
 import {useNavigate} from "react-router-dom";
-import Logo from "../../assets/img/Logo128.png"
+// import Logo from "../../assets/img/Logo128.png"
+import Logo from "../../assets/img/BankIco.svg"
 import {useAuth} from "../../hooks/use-auth";
 import {useDispatch} from "react-redux";
 import {removeUser} from "../../store/slices/userSlice";

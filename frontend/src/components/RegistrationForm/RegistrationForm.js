@@ -61,7 +61,7 @@ function RegistrationForm(props) {
 
     return (
         <>
-            <p className={s.header}>Welcome to<br/>IT-school banking</p>
+            <p className={s.header}>Welcome to<br/>IT-School Banking</p>
             <Form className={s.registrationForm} onSubmit={handleSubmit(onSubmit)}>
                 <p className={s.registration}>Registration</p>
                 <Input register={register}
