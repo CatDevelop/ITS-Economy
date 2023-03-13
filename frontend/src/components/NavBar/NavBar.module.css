@@ -89,7 +89,7 @@ body {
 .navbarLogo {
     /*background-color: var(--navbar-text-color-focus);*/
     /*border-radius: 50%;*/
-    width: 140px;
+    width: 100px;
     height: 50px;
     margin-right: 0.5em;
     justify-content: center;
