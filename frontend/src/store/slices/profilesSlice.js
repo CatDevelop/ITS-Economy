@@ -23,6 +23,7 @@ export const getProfiles = createAsyncThunk(
       return response;
     } catch (error) {
       return rejectWithValue(error.message);
+    }
   }
 );
 
