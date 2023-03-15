@@ -11,7 +11,7 @@ const PortfolioLayout = () => {
             <MainContent>
                 <Outlet/>
             </MainContent>
-            <Footer/>
+            {/*<Footer/>*/}
         </div>
     );
 };
