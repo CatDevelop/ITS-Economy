@@ -12,6 +12,8 @@ import RequireAuth from "./hoc/RequireAuth";
 import {TransferPage} from "./pages/TransferPage";
 import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import RequireAdmin from "./hoc/RequireAdmin";
+import {ProfilesPage} from "./pages/ProfilesPage";
 
 function App() {
     return (
@@ -40,6 +42,15 @@ function App() {
                         <Route index element={
                             <RequireAuth>
                                 <ProfilePage/>
+                            </RequireAuth>}/>
+                    </Route>
+
+                    <Route path='/profiles' element={<PortfolioLayout/>}>
+                        <Route index element={
+                            <RequireAuth>
+                                <RequireAdmin>
+                                    <ProfilesPage/>
+                                </RequireAdmin>
                             </RequireAuth>}/>
                     </Route>
 

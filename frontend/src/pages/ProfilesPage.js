@@ -5,18 +5,21 @@ import {useEffect} from "react";
 import {useProfile} from "../hooks/use-profile";
 import Card from "../components/Card/Card";
 import Transactions from "../components/Transactions/Transactions";
-import s from "../components/NavBar/NavBar.module.css";
-import {Link} from "react-router-dom";
+import {getProfiles} from "../store/slices/profilesSlice";
+import Profiles from "../components/Profiles/Profiles";
+import {useProfiles} from "../hooks/use-profiles";
 
-export const ProfilePage = () => {
+export const ProfilesPage = () => {
     const dispatch = useDispatch();
     const user = useAuth();
 
     useEffect(() => {
         dispatch(getProfile(user.id));
+        dispatch(getProfiles());
     }, []);
 
     const [profile] = useProfile();
+    const [profiles] = useProfiles();
 
     return (
         <div>
@@ -25,7 +28,7 @@ export const ProfilePage = () => {
                   cardholderCard={profile.card}
             />
 
-            <Transactions transactions={[].concat(profile.transactions).reverse()}/>
+            <Profiles profiles={profiles.profiles}/>
         </div>
     )
 }
